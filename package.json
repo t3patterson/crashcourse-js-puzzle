@@ -4,6 +4,7 @@
   "description": "starter kit for webpack-es6",
   "main": "app.js",
   "scripts": {
+    "preinstall" : "git remote remove origin",
     "go": "webpack --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
