@@ -1,10 +1,85 @@
-body {
-  background: purple; }
+*{box-sizing: border-box;}
+body{
+	font-family: 'Futura', 'Arial', sans-serif;
+	margin: 0;
+}
 
-h2 {
-  color: red; }
 
-h3 {
-  color: green; }
+body#html-css{
+	background: #F4B350;
+	padding: 20px;
+}
 
-/*# sourceMappingURL=styles.css.map*/
+body#html-css-js{
+	background: #2ECC71;
+	padding: 20px;
+}
+
+
+#app-container{
+	min-height: 80vh;
+	background: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+#app-container a {
+	padding: 20px 10px;
+	margin: 10px;
+	font-size: 28px;
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	width: 250px;
+}
+
+#app-container a:nth-of-type(1) {
+	background: #adadad;
+	color: #fff;
+}
+
+#app-container a:nth-of-type(2) {
+	background: #F5AB35;
+	color: #fff;
+}
+
+#app-container a:nth-of-type(3) {
+	background: #2ECC71;
+	color: #fff;
+}
+
+a.home-link{
+	padding: 10px;
+	background: #2574A9;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	bottom: 5px; right: 5px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+main {
+   display: flex;
+   max-width: 450px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+}
+
+div{
+   border: 1px solid #333;
+   height: 80px;
+   background: #65C6BB;
+   flex:  0 0 25%;
+   line-height: 80px;
+   text-align: center;
+   font-size: 30px;
+   font-family: "Futura";
+}
+
+#x{
+  background: #ddd;
+  border: 1px solid #333;
+
+  color: rgba(0,0,0,0)
+}
