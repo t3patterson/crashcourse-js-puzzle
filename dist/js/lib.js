@@ -1,5 +1,5 @@
 function initGameBoard(){
-  let arr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","x"]
+  let arr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","empty"]
   return _.chunk( _.shuffle(arr), 4)
 }
 
@@ -34,31 +34,31 @@ function findXYCoords(pieceToFind, board){
   return pos
 }
 
-function determineIfMoveable(clickedPos, emptyPos){
+function determineIfMoveable(clickedCoords, emptyCoords){
   let isMoveable = false
-  if( clickedPos.x + 1 === emptyPos.x && 
-      clickedPos.y === emptyPos.y
+  if( clickedCoords.x + 1 === emptyCoords.x && 
+      clickedCoords.y === emptyCoords.y
     ){
     isMoveable = true
     console.log('clicked-piece-MOVES-RIGHT')
   } 
   
-  if( clickedPos.x - 1 === emptyPos.x && 
-      clickedPos.y === emptyPos.y
+  if( clickedCoords.x - 1 === emptyCoords.x && 
+      clickedCoords.y === emptyCoords.y
     ){
     isMoveable = true
     console.log('clicked-piece-MOVES-LEFT')
   } 
   
-  if( clickedPos.x === emptyPos.x  && 
-      clickedPos.y - 1 === emptyPos.y 
+  if( clickedCoords.x === emptyCoords.x  && 
+      clickedCoords.y - 1 === emptyCoords.y 
     ){
     isMoveable = true
     console.log('clicked-piece-MOVES-UP')
   } 
   
-  if( clickedPos.x  === emptyPos.x && 
-      clickedPos.y + 1 === emptyPos.y
+  if( clickedCoords.x  === emptyCoords.x && 
+      clickedCoords.y + 1 === emptyCoords.y
     ){
     isMoveable = true
     console.log('clicked-piece-MOVES-DOWN')

@@ -48,6 +48,11 @@ body#html-css-js{
 	color: #fff;
 }
 
+#app-container a:nth-of-type(4) {
+	background: #1A1C1D;
+	color: #fff;
+}
+
 a.home-link{
 	padding: 10px;
 	background: #2574A9;
@@ -77,9 +82,8 @@ div{
    font-family: "Futura";
 }
 
-#x{
+#empty{
   background: #ddd;
   border: 1px solid #333;
-
   color: rgba(0,0,0,0)
 }
